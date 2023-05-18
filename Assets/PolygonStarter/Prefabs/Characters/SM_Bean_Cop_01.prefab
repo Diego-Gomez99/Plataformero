@@ -31,7 +31,8 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_Children: []
+  m_Children:
+  - {fileID: 1841964467410872570}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -97,6 +98,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 4058866896921748}
+  RaysCastPosition: {fileID: 1841964467410872570}
+  RangoVision: 1
+  Playerlayer:
+    serializedVersion: 2
+    m_Bits: 8
   Delay: 0
 --- !u!54 &5943224170950793226
 Rigidbody:
@@ -128,3 +134,33 @@ CapsuleCollider:
   m_Height: 2.1222806
   m_Direction: 1
   m_Center: {x: -0.0019368532, y: 1.0611403, z: 0.07858754}
+--- !u!1 &6774310213563303169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841964467410872570}
+  m_Layer: 0
+  m_Name: RayCast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1841964467410872570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6774310213563303169}
+  m_LocalRotation: {x: 0.0009213389, y: -0.021636428, z: 0.09525974, w: 0.9952169}
+  m_LocalPosition: {x: 0.144, y: 0.889, z: 0.398}
+  m_LocalScale: {x: 1.9999998, y: 2, z: 1.9999998}
+  m_Children: []
+  m_Father: {fileID: 4058866896921748}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.341, y: -2.458, z: 10.928}
